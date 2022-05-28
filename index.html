@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+        <!-- https://codepen.io/melnik909/pen/BZpJLN -->
+            <div class="page" style="margin-top: 3vh;margin-bottom: 1vh;">
+                <div class="landing">
+                <h1 id="formTitle" width="60%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, veritatis?</h1>
+                <img src="image/banner.jpg" width="100%" id="banner" alt="">
+                <details>
+                    <summary>รายละเอียด</summary>
+                    <details>
+                        <summary>กติกา</summary>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </details>
+                    <details>
+                        <summary>กำหนดส่งผลงาน</summary>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </details>
+                </details>
+                </div>
+                <label class="field field_v2">
+                    <input class="field__input" type="text" name="studentId" id="studentId" pattern="[4-9]\d{4}" onkeyup="checkStudentId(this.value)" maxlength="5" placeholder="54321" required autofocus>
+                    <span class="field__label-wrap">
+                      <span class="field__label">รหัสนักเรียน</span>
+                      <!-- <span class="field__label">Enter Student ID : </span> -->
+                    </span>
+                  </label>
+                <label class="field field_v2">
+                    <input class="field__input" type="text" name="studentName" id="studentName" onkeyup="checkStudentName(this.value)" placeholder="ปลายุทธ ไม่ประหยัด จันทร์เสพยา" required>
+                    <span class="field__label-wrap">
+                      <span class="field__label">ชื่อ สกุล</span>
+                    </span>
+                </label>
+                <h2 id="motto">"คำขวัญแสดงที่นี่"</h2>
+                <label class="field field_v2">
+                    <input class="field__input" name="studentMotto" id="studentMotto" placeholder="เมื่อผมตายไป แผ่นดินไทยจะสูงขึ้น" onkeyup="updateMotto(this.value)" required>
+                    <span class="field__label-wrap">
+                      <span class="field__label">คำขวัญ</span>
+                    </span>
+                </label>
+            </div>
+            
+            
+    </div>
+    <div>
+        <input type="checkbox" name="acceptPolicy" id="acceptPolicy" required>
+            <label for="acceptPolicy">ยอมรับเงื่อนไขการเข้าร่วมกิจกรรม</label>
+    </div>
+    <footer>
+        <button type="submit" onmouseleave="this.innerHTML='ส่งคำขวัญ'" onmouseenter="this.innerHTML='ขอบคุณที่เข้าร่วมกิจกรรม'">ส่งคำขวัญ</button>
+    </footer>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
